@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTP-8">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>LOGIN</h1>
+<form id ="formInput">
+	<label>Username:</label>
+	<input type="text" id="usn">
+	<br>
+	<label>Password:</label>
+	<input type="password" id="pass">
+	<br>
+	<button type="button" onclick="tampilkanHasil()">Login</button>
+</form>
+<script>
+function tampilkanHasil(){
+	var username = document.getElementById("usn").value;
+	var password = document.getElementById("pass").value;
+    
+	if (username=="jeonghanyoon" && password=="seventien") {
+	window.location.href="berita.html";
+	alert("CONGRATS!! You in");
+} else {
+  alert("OH NO! Try Again");
+} 
+}
+</script>
+</body>
+</html>

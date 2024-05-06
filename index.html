@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>YANGZHI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<div class="bgded overlay light" style="background-image:url('images/foto1.jpg');"> 
+  
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+  
+      <div id="logo" class="fl_left">
+        
+        <h1><a href="index.html">YANGVA & ZHIZHI'S WEBSITE</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="Berita.html">Home</a></li>
+		  <li class="active"><a href="Profile/profil.html">Profile</a></li>
+		  <li class="active"><a href="Gallery/Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div id="pageintro" class="hoc clear"> 
+    <div class="flexslider basicslider">
+      <ul>
+        <li>
+          <article>
+            <h3 class="heading">Welcome To Our Website</h3>
+          <form id ="formInput">
+	<label>Username:</label>
+	<input type="text" id="usn">
+	<br>
+	<label>Password:</label>
+	<input type="password" id="pass">
+	<br>
+	<button onclick="tampilkanHasil()">Login</button>
+</form>
+<script>
+function tampilkanHasil() {
+	var username = document.getElementById("usn").value;
+	var password = document.getElementById("pass").value;
+    
+	if (username=="jeonghanyoon" && password=="seventeen") {
+	window.location.href="berita.html";
+	alert("CONGRATS!! You in");
+} else {
+  alert("OH, NO! Try Again");
+  }}
+</script>
+          </article>
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+  
+</div>
+
+<div class="wrapper">
+  <div class="hoc clear"> 
+
+    <figure id="introblocks">
+      <ul class="nospace group">
+        <li class="one_third first"><a href="#"><img src="images/foto1.jpg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/foto2.jpeg" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="images/foto4.jpg" alt=""></a></li>
+      </ul>
+    </figure>
+
+  </div>
+</div>
+
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>
